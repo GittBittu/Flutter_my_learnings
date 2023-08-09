@@ -44,7 +44,7 @@ class CardWidget extends StatelessWidget {
               ),
               Text(
                 box.description,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 14,
                 ),
               ),
