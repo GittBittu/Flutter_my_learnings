@@ -34,7 +34,8 @@ class DescriptionPage extends StatelessWidget {
               const Text(
                 baconDescription,
                 style: TextStyle(
-                  fontSize: 17,
+                  fontSize: 19,
+                  wordSpacing: 3,
                   fontWeight: FontWeight.w600,
                 ),
               ),
