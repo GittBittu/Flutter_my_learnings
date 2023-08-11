@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tesapp/core/constants.dart';
+import 'package:tesapp/core/notifiers.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -32,6 +33,21 @@ class ProfilePage extends StatelessWidget {
             title: Text('example.com'),
           )
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          isDarkModeNotifier.value = !isDarkModeNotifier.value;
+        },
+        child: ValueListenableBuilder(
+          valueListenable: isDarkModeNotifier,
+          builder: (context, isDark, child) {
+            if(isDark){
+              return const Icon(Icons.dark_mode_rounded);
+            }else{
+              return const Icon(Icons.light_mode_rounded);
+            }
+          },
+        ),
       ),
     );
   }
