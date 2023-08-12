@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
           children: [
             CardWidget(
               box: ItemClass(
-                  title: 'Rocket',
+                  title: 'Rockets',
                   imagePath: 'images/rocket.png',
                   description: 'this is rocket'),
             ),
